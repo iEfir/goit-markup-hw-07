@@ -1,0 +1,44 @@
+.header-index {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.index-header-list {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-header-list {
+    margin-left: auto;
+}
+
+.container-header-contact {
+    margin-left: auto;
+}
+
+.index-header-item {
+    padding: 32px 0;
+}
+
+.contact-header-item {
+    display: flex;
+    min-width: 161px;
+}
+
+.index-header-item {
+    position: relative;
+}
+
+.header-portfolio {
+    border-bottom: 1px solid #ececec;
+}

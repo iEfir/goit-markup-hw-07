@@ -1,0 +1,12 @@
+.footer-logo {
+    min-width: 145px;
+    color: #ffffff;
+}
+
+.web-footer {
+    color: var(--logo-focus-hover-color);
+}
+
+.footer-logo:focus {
+    color: var(--logo-focus-hover-color);
+}
