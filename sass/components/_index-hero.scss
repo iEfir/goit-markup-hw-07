@@ -1,10 +1,10 @@
-.container-hero {
+.hero-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.index-hero {
+.hero {
     max-width: 1600px;
     margin: 0 auto;
     padding: 200px 0;
@@ -17,7 +17,7 @@
     background-size: cover;
 }
 
-.index-tagline {
+.hero-container__tagline{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -29,7 +29,7 @@
     margin-bottom: 30px;
 }
 
-.index-btn {
+.hero-container__btn {
     font-family: "roboto", sans-serif;
     font-weight: var(--title-logo-font-weight);
     font-size: 16px;
@@ -45,7 +45,7 @@
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.index-btn:hover,
-.index-btn:focus {
+.hero-container__btn:hover,
+.hero-container__btn:focus {
     background: #188ce8;
 }

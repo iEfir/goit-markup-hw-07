@@ -1,5 +1,5 @@
-.link-logo,
-.footer-logo {
+.logo,
+.footer__logo {
     font-family: "raleway", sans-serif;
     font-style: normal;
     font-weight: var(--title-logo-font-weight);
@@ -11,14 +11,14 @@
     transition: var(--animation-hover-focus);
 }
 
-.link-logo {
+.logo {
     margin-right: 93px;
 }
 
-.web {
+.logo__part {
     color: var(--logo-focus-hover-color);
 }
 
-.link-logo:focus {
+.logo:focus {
     color: var(--logo-focus-hover-color);
 }

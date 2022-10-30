@@ -1,4 +1,4 @@
-.navigation-link {
+.navigation__link {
     color: #212121;
     transition: var(--animation-hover-focus);
 }
@@ -22,8 +22,8 @@
     color: var(--logo-focus-hover-color);
 }
 
-.navigation-link,
-.contact-link {
+.navigation__link,
+.contact-header__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -31,12 +31,7 @@
     text-decoration: none;
 }
 
-.header-icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.contact-link {
+.contact-header__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,11 +39,15 @@
     color: #757575;
     text-decoration: none;
     transition: var(--animation-hover-focus);
+    .contact-header__icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
 }
 
-.navigation-link:hover,
-.navigation-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.contact-header__link:hover,
+.contact-header__link:focus {
     color: var(--logo-focus-hover-color);
 }

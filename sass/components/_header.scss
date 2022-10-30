@@ -1,4 +1,4 @@
-.header-index {
+.header {
     position: relative;
     border-bottom: 1px solid #ececec;
 }
@@ -8,35 +8,26 @@
     align-items: center;
 }
 
-.header-navigation {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.index-header-list {
+.navigation__list,
+.contact-header {
     display: flex;
     gap: 50px;
-}
-
-.contact-header-list {
     margin-left: auto;
 }
 
-.container-header-contact {
-    margin-left: auto;
-}
-
-.index-header-item {
+.navigation__item{
+    position: relative;
     padding: 32px 0;
 }
 
-.contact-header-item {
+.contact-header__item {
     display: flex;
     min-width: 161px;
-}
-
-.index-header-item {
-    position: relative;
 }
 
 .header-portfolio {

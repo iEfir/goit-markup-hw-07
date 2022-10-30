@@ -158,6 +158,10 @@
     border-color: var(--logo-focus-hover-color);
 }
 
+.modal-checkbox-input:focus~.modal-checkbox-icon {
+    border-color: var(--logo-focus-hover-color);
+}
+
 .policy-link {
     display: inline-block;
     color: var(--logo-focus-hover-color);

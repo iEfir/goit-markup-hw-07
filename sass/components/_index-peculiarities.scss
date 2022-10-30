@@ -1,4 +1,4 @@
-.index-peculiarities {
+.peculiarities {
     padding-top: var(--distance-top-bottom-section);
 }
 
@@ -6,16 +6,15 @@
     display: flex;
 }
 
-.index-peculiarities-list {
+.peculiarities__list {
     display: flex;
     gap: 30px;
+    .peculiarities__item {
+            width: 270px;
+        }
 }
 
-.index-list-item {
-    width: 270px;
-}
-
-.peculiarities-icon {
+.peculiarities__icon {
     width: 270px;
     height: 120px;
     background: #f5f4fa;
@@ -26,7 +25,7 @@
     align-items: center;
 }
 
-.index-content {
+.peculiarities__content {
     font-weight: var(--title-logo-font-weight);
     font-size: 14px;
     line-height: 1.14;
@@ -36,7 +35,7 @@
     margin-bottom: 10px;
 }
 
-.index-description {
+.peculiarities__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
