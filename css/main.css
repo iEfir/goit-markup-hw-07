@@ -601,7 +601,7 @@ img {
   color: var(--logo-focus-hover-color);
 }
 
-.backdrop-index-hero {
+.modal-backdrop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -610,7 +610,7 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-index-hero {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -623,11 +623,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-index-hero.is-hidden .modal-index-hero {
+.modal-backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -643,9 +643,7 @@ img {
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--logo-focus-hover-color);
 }
 
@@ -659,7 +657,7 @@ img {
   margin: 40px 40px 30px 40px;
 }
 
-.modal-form-title {
+.modal-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -669,7 +667,7 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-form-label {
+.modal-form__label {
   display: block;
   font-size: 12px;
   line-height: 1.16;
@@ -678,7 +676,13 @@ img {
   position: relative;
 }
 
-.modal-form-input {
+.modal-form__box {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+.modal-form__box .modal-form__input {
   display: inline-block;
   width: 448px;
   height: 40px;
@@ -688,23 +692,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-
-.modal-form-input:focus-within {
-  border-color: var(--logo-focus-hover-color);
-}
-
-.modal-form-input:focus-within + .modal-form-icon {
-  fill: var(--logo-focus-hover-color);
-}
-
-.modal-form-box {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 4px;
-}
-
-.modal-form-icon {
+.modal-form__box .modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -712,8 +700,7 @@ img {
   fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-textarea-field {
+.modal-form__box .modal-form__textarea {
   height: 120px;
   resize: none;
   font-size: 12px;
@@ -724,7 +711,15 @@ img {
   padding: 12px 16px;
 }
 
-.modal-form-checkbox {
+.modal-form__input:focus-within {
+  border-color: var(--logo-focus-hover-color);
+}
+
+.modal-form__input:focus-within + .modal-form__icon {
+  fill: var(--logo-focus-hover-color);
+}
+
+.modal-form__checkbox {
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -733,8 +728,7 @@ img {
   color: #757575;
   padding-left: 36px;
 }
-
-.modal-checkbox-icon {
+.modal-form__checkbox .modal-from__checkbox-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -748,7 +742,7 @@ img {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox-input:checked ~ .modal-checkbox-icon {
+.modal-form__checkbox-input:checked ~ .modal-from__checkbox-icon {
   background-color: var(--logo-focus-hover-color);
   background-image: url(../img/icon-checkbox.svg);
   background-position: center;
@@ -757,18 +751,18 @@ img {
   border-color: var(--logo-focus-hover-color);
 }
 
-.modal-checkbox-input:focus ~ .modal-checkbox-icon {
+.modal-form__checkbox-input:focus ~ .modal-from__checkbox-icon {
   border-color: var(--logo-focus-hover-color);
 }
 
-.policy-link {
+.modal-from__policy-link {
   display: inline-block;
   color: var(--logo-focus-hover-color);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.modal-form-btn {
+.modal-form__submit {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -782,9 +776,7 @@ img {
   border-radius: 4px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form__submit:hover, .modal-form__submit:focus {
   background: #188ce8;
 }
 
